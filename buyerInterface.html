@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARM 2 MART -buyer page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="buyerInterface.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+/* ----------------------------------- */
+
+/* main content */
+
+main{
+    background-image: url(images/loginbackgroundimage.png);
+    background-size: cover;
+    height: 680px;
+    width: 1528px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 60px;
+  
+}
+body {
+    font-family: Arial, sans-serif;
+    
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+select {
+    padding: 5px;
+    margin: 10px 0;
+    
+}
+select {
+    width: 200px;
+    max-height: 150px; /* Limits dropdown height */
+    overflow-y: auto;  /* Enables scrolling within dropdown */
+}
+.firstDiv{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#re-selectBtn{
+    height: 30px;
+    width: 130px;
+    position: relative;
+    right: 410px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 50px 1px rgb(63, 63, 66);
+
+}
+#re-selectIcon{
+    rotate: 180deg;
+    color: white;
+    margin-right: 10px;
+}
+
+.welcomeSeller{
+    height: 40px;
+    width: 400px;
+    background-color: rgb(0, 115, 255);
+    box-shadow: 0px 0px 50px 1px rgb(96, 96, 100);
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+.welcomeSeller{
+    height: 40px;
+    width: 400px;
+    background-color: rgb(0, 115, 255);
+    box-shadow: 0px 0px 50px 1px rgb(96, 96, 100);
+    margin-top: 20px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.sellerFilter{
+    height: 150px;
+    width: 1200px;
+    border: 2px solid white;
+    /* border-radius: 15px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.locationFilter{
+    display: flex;
+    
+}
+.stateDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-right: 50px;
+}
+.districtDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#searchSellerBtn{
+    height: 35px;
+    width: 180px;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(55, 255, 0);
+    border: 1.5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgb(135, 122, 122);
+}
+#addRequirementBtn{
+    height: 35px;
+    width: 280px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    background-color:rgb(0, 115, 255) ;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px rgb(135, 122, 122);
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+    
+            <div class="nav-cen">
+                <a href="home.html" class="homeLink"><div class="home nav">HOME</div></a>
+                <a href="contact.html" class="link"><div class="contact nav">CONTACT</div></a>
+                <a href="meetOurTeam.html" class="link"><div class="team nav">MEET OUR TEAM</div></a>
+                <a href="faqsInterface.html" class="faqlink link"> <div class="faqs nav">FAQ's</div></a>
+
+
+            </div>
+    
+            <div class="search">
+                <input id="searchbar" type="text" placeholder="search your item here">
+                <button id="searchbtn">
+                    <i class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="index.html"><button id="logOut" name="logOut">Log Out</button></a>
+
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="firstDiv">
+           <a href="ChooseSellerOrBuyer.html"> <button id="re-selectBtn"><p><i id="re-selectIcon" class="fa-solid fa-share-from-square"></i>Re-Select</p></button></a>
+            <div class="welcomeSeller">WELL-COME TO THE BUYER PAGE !!</div>
+        </div>
+       <div class="sellerFilter">
+            <div class="locationFilter">
+                <div class="stateDiv">
+                    <label for="state" id="selectState">Select State:</label>
+                <select id="state" onchange="updateDistricts()">
+                    <option value="">    --Select State--</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+        
+                </select>
+        
+                </div>
+                <div class="districtDiv">
+                    <label for="district" id="selectDistrict">Select District:</label>
+                <select id="district">
+                    <option value="">--Select District--</option>
+                </select>
+                </div>
+               </div>
+               <button id="searchSellerBtn">SEARCH SELLERS</button>
+        
+            </div>
+
+            <a href="addRequirementAsBuyer.html"><button id="addRequirementBtn"> + ADD REQUIREMENT</button></a>
+            
+
+
+    </main>
+    <footer>
+        <div class="footerBox">
+            <div class="footerLogo"></div>
+            <div class="horzontalLinee"></div>
+
+            <h3>FUTUER TRACKS</h3>
+            <div class="futuerTracks">
+                <div class="box1 box">
+                    <ul>
+                        <li>Digital Marketplace for Farmers</li>
+                        <li>Real-time Market Data & Price Forecasting</li>
+
+                    </ul>
+                </div>
+                <div class="box2 box">
+                    <ul>
+                        <li>Smart Contracts & Blockchain-based Transactions</li>
+                        <li>Government & Institutional Partnerships</li>
+
+                    </ul>
+                </div>
+                <div class="box3 box">
+                    <ul>
+                        <li>AI-driven Demand-Supply Matching</li>
+                        <li>Micro-financing & Insurance Solutions</li>
+                    </ul>
+                </div>
+                <div class="box4 box">
+                    <ul>
+                        <li>Community-led Agricultural Cooperatives</li>
+                        <li>Improved Storage & Logistics Infrastructure</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="horzontalLinee"></div>
+            <div class="contactpara">
+                <p>ABOUT US</p>
+                <p>MEET OUR TEAM</p>
+                <p>CONTACT</p>
+            </div>
+            <div class="horzontalLinee"></div>
+            <div class="termsCondition">
+                <div class="termsCondition-Para">
+                    <P>FARM 2 MART</P>
+                    <p>term & condition</p>
+                    <p>privacy policy</p>
+                </div>
+                <div class="termCondition-icon">
+                    <i class="fa-brands fa-instagram fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-whatsapp fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-x-twitter fa-bounce" class="icon" style="color: #ffffff;"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="sellerInterface.js"></script>
+    
+</body>
+</html>

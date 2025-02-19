@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARM 2 MART -login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: 'Roboto', sans-serif;
+
+    letter-spacing: 1.5px;
+
+}
+
+/* ---------------------------------------- */
+
+
+/* main box */
+main{
+    background-image: url(images/loginbackgroundimage.png);
+    background-size: cover;
+    height: 680px;
+    width: 1528px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    top: 60px;
+}
+
+
+.loginBox{
+    height: 500px;
+    width: 350px;
+    border: 2px solid white;
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 0px 0px 30px 1px rgb(121, 119, 119);
+
+    margin-left: 150px;
+    padding: 2px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.logoName{
+    height: 70px;
+    width: 280px;
+    background-image: url(images/farm2martlogo.png);
+    background-size: cover;
+    margin-top: 40px;
+}
+.emailNum{
+    margin-top: 40px;
+}
+.emailnumber{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.email-para{
+    size: 10px;
+}
+#user-icon{
+    size: 10px;
+}
+.email-input{
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 20px;
+}
+.horizontal-line1{
+    height: 1.5px;
+    width: 300px;
+    margin-top: 10px;
+    background-color: rgb(65, 63, 63);
+}
+
+
+.password{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 15px ;
+    margin-top: 30px;
+
+}
+.password-para{
+    size: 10px;
+}
+.pass-lock{
+    margin-top: 5px;
+   
+
+}
+.password-input{
+    height: 30px;
+    width: 220px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    
+}
+.horizontal-line2{
+    height: 1.5px;
+    width: 300px;
+    margin-top: 10px;
+    background-color: rgb(65, 63, 63);
+}
+
+
+
+
+
+
+
+
+.loginRegister{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 25px;
+}
+.loginbutton{
+    height: 35px;
+    width: 180px;
+    background-color: red;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px rgb(121, 119, 119);
+
+}
+.new-acc{
+    text-decoration: none;
+    color: red;
+}
+
+.farmerlogo{
+    height: 625px; 
+    width : 690px;
+    background-image: url(images/loginpagefarmerlogo.png);
+    background-size: cover;
+    margin-top: 50px;
+
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+
+            <div class="nav-cen">
+                <a href="home.html" class="homeLink"><div class="home nav">HOME</div></a>
+                <a href="contact.html" class="link"><div class="contact nav">CONTACT</div></a>
+                <a href="meetOurTeam.html" class="link"><div class="team nav">MEET OUR TEAM</div></a>
+                <a href="faqsInterface.html" class="faqlink link"> <div class="faqs nav">FAQ's</div></a>
+
+
+            </div>
+
+            <div class="search">
+                <input id="searchbar" type="text" placeholder="search your item here">
+                <button id="searchbtn">
+                    <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <!-- <form action=""> -->
+            <div class="loginBox">
+                <div class="logoName"></div>
+                <div class="emailNum">
+                    <p class="email-para">Enter Email address</p>
+                    <div class="emailnumber">
+                        <i class="fa-regular fa-user" id="user-icon"></i>
+                        <input type="email" placeholder="  Enter here " class="email-input">
+                    </div>
+                    <div class="horizontal-line1"></div>
+                </div>
+                
+                <div class="password">
+                    <p class="password-para">Password</p>
+                   <div class="pass-lock">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter password here" class="password-input">
+                   </div>
+                   <div class="horizontal-line2"></div>
+                </div>
+               <div class="loginRegister">
+                <a href="home.html"><button class="loginbutton">LOGIN</button></a>
+                <a href="registration.html" class="new-acc">create new account</a>
+               </div>
+            </div>
+    
+            <div class="farmerlogo"></div>
+    
+        <!-- </form> -->
+
+    </main>
+    <footer>
+        <div class="footerBox">
+            <div class="footerLogo"></div>
+            <div class="horzontalLinee"></div>
+
+            <h3>FUTUER TRACKS</h3>
+            <div class="futuerTracks">
+                <div class="box1 box">
+                    <ul>
+                        <li>Digital Marketplace for Farmers</li>
+                        <li>Real-time Market Data & Price Forecasting</li>
+
+                    </ul>
+                </div>
+                <div class="box2 box">
+                    <ul>
+                        <li>Smart Contracts & Blockchain-based Transactions</li>
+                        <li>Government & Institutional Partnerships</li>
+
+                    </ul>
+                </div>
+                <div class="box3 box">
+                    <ul>
+                        <li>AI-driven Demand-Supply Matching</li>
+                        <li>Micro-financing & Insurance Solutions</li>
+                    </ul>
+                </div>
+                <div class="box4 box">
+                    <ul>
+                        <li>Community-led Agricultural Cooperatives</li>
+                        <li>Improved Storage & Logistics Infrastructure</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="horzontalLine"></div>
+            <div class="contactpara">
+                <p>ABOUT US</p>
+                <p>MEET OUR TEAM</p>
+                <p>CONTACT</p>
+            </div>
+            <div class="horzontalLine"></div>
+            <div class="termsCondition">
+                <div class="termsCondition-Para">
+                    <P>FARM 2 MART</P>
+                    <p>term & condition</p>
+                    <p>privacy policy</p>
+                </div>
+                <div class="termCondition-icon">
+                    <i class="fa-brands fa-instagram fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-whatsapp fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-linkedin fa-bounce" class="icon" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-x-twitter fa-bounce" class="icon" style="color: #ffffff;"></i>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    
+</body>
+</html>
